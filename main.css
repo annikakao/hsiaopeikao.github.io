@@ -1,0 +1,284 @@
+html,
+body {
+  margin: 0 !important;
+  padding: 0;
+  background: black;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.loading-screen {
+  position: relative;
+  padding-left: 90px;
+  padding-right: 0;
+  padding-top: 0;
+  background-color: black;
+  width: 0%;
+  height: 100%;
+}
+
+.load-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  background-color: black;
+}
+
+.context {
+  height: 300px;
+  font-size: 30px;
+  color: white;
+  background-color: red;
+  z-index: 99999999;
+}
+
+h1 {
+  position: absolute;
+  top: 38%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  font-size: 84px;
+}
+
+.button1 {
+  position: fixed;
+  top: 70%;
+  left: 10%;
+  text-align: left !important;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+}
+
+.button {
+  position: fixed;
+  top: 60%;
+  left: 10%;
+  text-align: left !important;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+}
+
+.button1 a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+  border: 1px solid red;
+  padding: 24px 96px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 10px;
+  transition: 0.9s;
+}
+.button a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: red;
+  border: 1px solid red;
+  padding: 24px 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 10px;
+  transition: 0.9s;
+}
+
+.button:hover a {
+  background: red;
+  color: #161616;
+  transition: 0.3s;
+}
+
+.button1:hover a {
+  background: red;
+  color: #161616;
+  transition: 0.3s;
+}
+
+#lulala {
+  position: relative;
+  height: 1vw;
+  padding-bottom: 0px;
+  text-align: center !important;
+  animation-duration: 5s;
+  margin-top: 30vw;
+  animation: nav-ani 5s !important;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  z-index: 100;
+  -webkit-transition: opacity 0.9s ease-in-out;
+  -moz-transition: opacity 0s ease-in-out;
+  transition: opacity 0.9s ease-in-out;
+}
+
+#lulala h2 {
+  text-align: right !important;
+  padding-top: 1vw;
+  font-size: 20px;
+  line-height: 3vw;
+  padding-right: 2vw !important;
+}
+
+section img {
+  width: 85%;
+  position: relative;
+  height: auto;
+  opacity: 0.7;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  filter: grayscale(0.5);
+  /*border-top: solid 1px gray;*/
+  /*border-bottom: solid 1px gray;*/
+
+  float: right;
+  text-align: right;
+}
+
+section img:hover {
+  filter: grayscale(0);
+  transition: 0.3s ease-in-out;
+}
+
+@-webkit-keyframes nav-ani {
+  from {
+    margin-top: 1vw;
+    opacity: 0.3;
+  }
+  50% {
+    margin-top: 30vw !important;
+    opacity: 0.6;
+  } /* ignored */
+  to {
+    margin-top: 45vw !infinite;
+    opacity: 1;
+  }
+}
+
+.text {
+  height: 30%;
+  position: relative;
+
+  line-height: 4vw;
+  font-weight: 200;
+  padding-right: 2vw !important;
+}
+section h2 {
+  text-align: right;
+  padding-right: 2vw !important;
+  opacity: 0.8;
+}
+
+section {
+  color: white;
+  background-color: transparent;
+  position: relative;
+  padding-bottom: 0px;
+  text-align: center !important;
+  animation-duration: 5s;
+  animation: nav-ani 5s !important;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  z-index: 100;
+  padding-top: 17%;
+}
+
+.column {
+  float: right;
+  width: 44%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  padding: 6px;
+  text-align: center;
+  background-color: transparent;
+}
+
+.new2 {
+  float: right;
+  border: 0.5px solid red;
+  width: 30%;
+  opacity: 0.4;
+  transform: rotate(90deg);
+  animation-name: hranimation;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+.new1 {
+  float: left;
+  border: 0.5px solid red;
+  width: 30%;
+  opacity: 0.4;
+  transform: rotate(90deg);
+  animation-name: hranimation;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+.new5 {
+  float: right;
+  border: 0.5px solid white;
+  width: 30%;
+  opacity: 0.4;
+  transform: rotate(90deg);
+  animation-name: hranimation;
+  animation-duration: 7s;
+  animation-delay: 1s;
+  transition: ease-in-out0.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.new6 {
+  float: left;
+  border: 0.5px solid white;
+  width: 30%;
+  opacity: 0.4;
+  transform: rotate(90deg);
+  transition: ease-in-out0.2s;
+  animation-name: hranimation;
+  animation-delay: 1s;
+  animation-duration: 7s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes hranimation {
+  from {
+    transform: rotate(0deg);
+
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(45deg) !important;
+
+    opacity: 0.6;
+  } /* ignored */
+  to {
+    transform: rotate(90deg);
+
+    opacity: 0.4;
+  }
+}
